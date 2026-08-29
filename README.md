@@ -1,7 +1,7 @@
 # Homebrew tap for Vigilance
 
 ```sh
-brew install fathermarz/vigi/vigi
+brew install vigihq/vigi/vigi
 ```
 
 Then activate the free tier or install a Pro license:
