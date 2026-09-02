@@ -1,0 +1,30 @@
+version: 0.2
+
+# The Homebrew tap.
+#
+# Nothing is built here. The release rewrites Formula/vigi.rb from a template
+# and pushes it, so this only has to catch a formula that would not install.
+#
+# It is worth catching. A broken formula is a broken `brew install` for every
+# customer on a Mac, and the release that pushed it has already shipped.
+
+phases:
+  install:
+    runtime-versions:
+      ruby: 3.2
+
+  build:
+    commands:
+      - ruby -c Formula/vigi.rb
+      # Every download url and hash the formula promises must be real. A hash
+      # that does not match is an install that fails at the last step.
+      - |
+        set -eu
+        urls=$(grep -oE 'https://[^"]+' Formula/vigi.rb | sort -u)
+        test -n "$urls" || { echo "the formula names no downloads"; exit 1; }
+        for u in $urls; do
+          code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 30 "$u")
+          echo "$code  $u"
+          test "$code" = "200" || { echo "that download is not there"; exit 1; }
+        done
+      - echo "the formula parses and every download it names is live"
