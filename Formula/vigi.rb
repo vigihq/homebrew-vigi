@@ -13,22 +13,22 @@ class Vigi < Formula
   on_macos do
     on_arm do
       url "https://vigihq.com/dl/v0.1.50/vigi-darwin-arm64"
-      sha256 "587667554c50be6a284c5e798bf7c5fc3878212bda473aef1245250e54cdef71"
+      sha256 "094479ba2e3d9df2379e3465cd995ecca2c8f53f0977806f0578916ad41331fa"
     end
     on_intel do
       url "https://vigihq.com/dl/v0.1.50/vigi-darwin-amd64"
-      sha256 "22496ea57663dbca836e6bacf910dfc828ca6ac4f7f86176dbf99d6ad2f06b06"
+      sha256 "28c7161293221c3c6b8e6108bf4592011903ef34e35b5c8e81d5116f69b4e0f2"
     end
   end
 
   on_linux do
     on_arm do
       url "https://vigihq.com/dl/v0.1.50/vigi-linux-arm64"
-      sha256 "7d5c4b2e2aa8dd2214ec098e275576fe4b63946bff68e040437f12e0f0ad77ee"
+      sha256 "e9a346e3a4e4b5066ef640e531c7fbb96b453c78499c1f7d89ac8dd0b987330b"
     end
     on_intel do
       url "https://vigihq.com/dl/v0.1.50/vigi-linux-amd64"
-      sha256 "046255b1b6e9c4d312b8045718e85dc2812b4c2f7199b9b79a934e76dccc551e"
+      sha256 "05594e29684160054a20896dcdc406aa55c067dcac3314506b3db7f9a43a5e0f"
     end
   end
 
