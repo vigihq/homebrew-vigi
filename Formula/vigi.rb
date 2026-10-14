@@ -7,28 +7,28 @@
 class Vigi < Formula
   desc "Catch supply-chain attacks before they reach production"
   homepage "https://vigihq.com"
-  version "1.0.2"
+  version "1.0.3"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://vigihq.com/dl/v1.0.2/vigi-darwin-arm64"
-      sha256 "a60859ae210b6e47d7ec0692e39a55db16fb0d6549f2bbcf85cb3b39a7bf9e9c"
+      url "https://vigihq.com/dl/v1.0.3/vigi-darwin-arm64"
+      sha256 "f640fe9d82331cb67ea03f483745930ce7bdda54530f6a8d342f277fc9d29931"
     end
     on_intel do
-      url "https://vigihq.com/dl/v1.0.2/vigi-darwin-amd64"
-      sha256 "4797ea582b89ef3c9a1795dc3a36775c60aa6f6ba465cac1302f8efab1d1e326"
+      url "https://vigihq.com/dl/v1.0.3/vigi-darwin-amd64"
+      sha256 "6bbf1e1a5422d09b757c5fcda2b4793190b5afcadaf5ef97ae7cb3b587d5a571"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://vigihq.com/dl/v1.0.2/vigi-linux-arm64"
-      sha256 "d5e89faf9c595ae494e9bcfc62bac36e76c8522c3c0015f971c9ce067db47d31"
+      url "https://vigihq.com/dl/v1.0.3/vigi-linux-arm64"
+      sha256 "3ce3c0b7e8cdc49b38caf19e3356c674b7588d981756103f2b632fd8ca246189"
     end
     on_intel do
-      url "https://vigihq.com/dl/v1.0.2/vigi-linux-amd64"
-      sha256 "462a1a038fa881b93cfbb93a3fc12e303715f2f34c4095b9edfc28e1a078ab41"
+      url "https://vigihq.com/dl/v1.0.3/vigi-linux-amd64"
+      sha256 "d2f70b410b151946dd9195f8d05336f7498517f005cc2b249d112a8704ac9f4d"
     end
   end
 
